@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -69,8 +73,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.mainInnerNav{
+    max-width: 2500px;
+}
 .mainNav{
     background-color: rgba(0,0,0,0.69);
+}
+.mainInnerNav, .mainNav{
     display: flex;
     align-items: center;
     top: 0px;
@@ -93,7 +102,7 @@ body {
 }
 
 .navLinks li{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
@@ -113,8 +122,17 @@ body {
     right: -13px;
 }
 
+.navLinks li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .navLinks li:hover{
     opacity: 0.8;
+}
+
+.mobView .navLinks li:hover{
+    opacity: 1;
 }
 
 .navLinks li:last-child::before{
@@ -127,7 +145,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 19px;
+    font-size: 1.3rem;
 }
 
 .iconsDiv a{
@@ -146,7 +164,7 @@ body {
 }
 
 .barDiv > i{
-    font-size: 25px;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 .barDiv > i:hover{
@@ -178,12 +196,12 @@ body {
 }
 
 .homePageFirstSection h1{
-    font-size: 14px;
+    font-size: 0.8rem;
     color: #CA4370;
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
-    line-height: 17px;
+    line-height: 1rem;
     letter-spacing: 0.65px;
     margin-bottom: 10px;
 }
@@ -208,21 +226,20 @@ body {
 
 .homePageFirstSection div h2{
     color: #84795d;
-    font-size: 37px;
-    line-height: 44px;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
     font-weight: 600;
 }
 
 .homePageFirstSection p{
     width: 100%;
-    margin-top: 5px;
+    margin: 0% auto;
     padding: 0px 10px;
-    font-size: 15px;
-    line-height: 27.7143px;
+    font-size: 1rem;
+    line-height: 2rem;
     font-style: normal;
     font-weight: 400;
     max-width: 700px;
-    margin: 0% auto;
     text-align: center;
 }
 
@@ -236,7 +253,7 @@ body {
     background-color: white;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 30px;
     color: rgb(202, 67, 112);
     font-weight: 600;
@@ -251,7 +268,7 @@ body {
 
 .arrowDownIcon{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .homePageFirstSection a button::before{
@@ -278,21 +295,32 @@ body {
     height: auto;
     flex-direction: column;
 }
-.homePageSecondSection{
+.mainHomePageSecondSection{
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: rgb(255, 246, 242);
+}
+.homePageSecondSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    max-width: 1800px;
+    align-items: center;
     gap: 0px;
+    margin: 0% auto;
     justify-content: center;
     flex-direction: column;
-    padding-top: 50px;
-    background-color: rgb(255, 246, 242);
 }
 
 .mainIcon{
-    width: 350px;
+    width: 20rem;
     height: auto;
+    margin-bottom: 0.1rem;
 }
 
 .mobView ul{
@@ -306,7 +334,14 @@ body {
 }
 
 .mobView ul li{
-    padding: 6px 0px;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+.mobView ul li:hover{
+    color: #ffffff;
+    background-color: #E11919;
+    transition: 0.3s all ease;
 }
 
 .mobView ul li::before{
@@ -320,22 +355,21 @@ body {
 
 .welcomeLine{
     width: 100%;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: -19px;
     color: rgb(132, 121, 93);
     flex-basis: auto;
     flex-direction: row;
-    font-family: Poppins, sans-serif;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
 }
 
 .hdWelcomeSecond{
     font-weight: 500;
-    font-size: 29px;
-    line-height: 40px;
+    font-size: 1.8rem;
+    line-height: 2rem;
     margin-top: -40px;
     color: rgb(132, 121, 93);
     text-align: center;
@@ -380,11 +414,18 @@ body {
     flex-direction: column;
 }
 
-.gridSystem a img{
+.gridSystem a .img1{
     width: 100%;
-    aspect-ratio: 1/0.67;
+    height: 250px;
     object-fit: cover;
     border-radius: 30px 0px 30px 0px;
+}
+
+.gridSystem a .img2{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 0px 30px 0px 30px;
 }
 
 .gridSystem a{
@@ -392,29 +433,501 @@ body {
     font-weight: 500;
 }
 
+.gridSystem a div{
+    color: rgb(132, 121, 93);
+    cursor: pointer;
+    font-family: "Overlock", sans-serif;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .transparentOne{
     width: 100%;
     height: 100%;
     padding: 2%;
 }
-.transparentOne div{
+.transparentOne > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 0px;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+.bellDiv{
+    width: 70px;
+    border: 3px solid rgb(173, 140, 125);
+    height: 70px;
+    font-size: 1.9rem;
+    color: rgb(173, 140, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.playWriteFont{
+    margin-top: 10px;
+    font-family: "Sail", system-ui;
+}
+
+.playWriteFontHdg{
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: rgba(132, 121, 93, 0.97);
+}
+
+.eventManagementCompany{
+    color: rgb(213, 45, 101);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    line-height: 1.3rem;
+    text-align: center;
+}
+
+.transparentOne > div > button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.transparentOne > div > button{
+    padding: 0.9rem 1.8rem;
+    margin-top: 3px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    border-radius: 25px;
+    background-color: rgba(249, 102, 97);
+}
+
+.transparentOne > div > .iconsMain{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.transparentOne > div > .iconsMain *{
+    text-decoration: none;
+    transition: 0.3s all ease;
+    color: rgb(132, 121, 93);
+}
+
+.transparentOne > div > .iconsMain *:hover{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.transparentOne > div > .iconsMain *:active{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.memoriesSectionHome{
+    width: 100%;
+    background-size: cover;
+    background-position: top top;
+    background-attachment: fixed;
+    background-image: url('./Assests/Images/bgImage.jpg');
+    height: auto;
+    min-height: 130px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.transparentOne > div > button:hover{
+    background-color: rgb(251, 74, 68);
+}
+
+.memoriesSectionHome > div{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.memoriesSectionHome > div > a{
+    color:   rgb(251, 74, 68);
+    text-decoration: none;
+}
+
+.memoriesSectionHome button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-family: "Poppins", sans-serif;
+    color:  rgb(202, 67, 112);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s all ease;
+}
+
+.memoriesSectionHome button:hover{
+    color: #000000;
+    margin-top: 15px;
+}
+
+.homePageMrAndMrsSection{
+    width: 100%;
+    height: 430px;
+    background-attachment: fixed;
+    background-image: url('./Assests/Images/MrAndMrs.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.whoAreWeSection{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px 0px;
+    background-color: rgb(255, 246, 242);
+    width: 100%;
+    border-radius: 5px;
+    max-width: 999px;
+    margin: 0% auto;
+    margin-bottom: 30px;
+    height: auto;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: -130px;
+}
+
+.weOrangize{
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin-top: 7px;
+    color: rgb(132, 121, 93);
+}
+
+.whoAreWeHdg{
+    margin-top: 40px;
+    color: rgba(128, 117, 88, 0.865);
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    font-weight: 200;
+}
+
+.paraghWhoAreWe{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: rgba(1, 22, 40, 0.75);
+    line-height: 1.7rem;
+}
+
+.hdgWhoAreWe{
+    font-weight: 700;
+    padding: 15px 0px;
+    font-size: 1rem;
+    color: rgba(1, 22, 40, 0.75);
+}
+
+.pairIcon{
+    width: 17rem;
+}
+
+.targumaDiv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0.8rem 0px;
+    color: rgb(84, 89, 95);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.duaDiv{
+    width: 100%;
+    height: auto;
+    line-height: 2.45rem;
+    text-align: center;
+    font-size: 2.45rem;
+    font-weight: 100;
+    font-family: 'Sail', sans-serif;
+    color: rgb(132, 121, 93);
+}
+
+#pairSection{
+    width: 100%;
+    display: flex;
+    max-width: 2000px;
+    margin: 0% auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoImage{
+    width: 100%;
+    max-width: 75%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-size: cover;
+    filter: brightness(1) contrast(1.12) saturate(1) blur(0px) hue-rotate(0deg);
+    background-position: center center;
+    background-image: url('./Assests/Images/videoImage.jpg');
+    aspect-ratio: 16/8;
+    box-shadow: rgba(0, 0, 0, 0.38) 0px 10px 38px -1px;
+    background-color: orange;
+}
+
+.videoBtn > span{
+    color: #E11919;
+    cursor: pointer;
+    font-size: 65px;
+}
+
+.ourPortfolioSection{
+    width: 100%;
+    height: auto;
+    background-position: top top;
+    padding: 20px 0px;
+    background-image: url('./Assests/Images/bgImage.jpg');
+    /* max-width: 999px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 0px;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(255, 246, 242); */
+}
+.mainPortfolioSection{
+    max-width: 1020px;
+    background-color: rgb(255, 246, 242);
+    margin: 0% auto;
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
+
+.sliderMainDiv{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.97);
-    opacity: 0.82;
+    gap: 5px;
 }
+
+.sliderMainDiv .upperDiv{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowLftDiv, .arrowRgtDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 10%;
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+}
+.arrowLftDiv > span, .arrowRgtDiv > span{
+    font-size: 40px;
+}
+
+.slidesDiv{
+    height: 100%;
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    grid-template-columns: repeat(10, 260px);
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.paginationDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.paginationDiv .pagination{
+    width: 5px;
+    height: 5px;
+    background-color: rgba(206, 119, 4, 0.5);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.paginationDiv .activePag{
+    background-color: rgb(206, 119, 4);
+}
+
+.slidesDiv .slide{
+    transition: 0.3s all ease;
+    min-width: 273px;
+    max-width: 300px;
+    width: 100%;
+    height: 383px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slidesDiv .slide > img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 2000px) {
+    html{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .mainBgDiv > div{
+        grid-template-columns: 1fr;
+    }
+    .mainBgDiv .gridSystem{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .transparentOne{
+        min-height: 500px;
+    }
+}
+
 
 @media only screen and (max-width: 920px) {
     .navLinks, .iconsDiv{
         display: none;
+    }
+    .html{
+        font-size: 15px;
+    }
+    .homePageFirstSection div h2 {
+        color: #84795d;
+        font-weight: 600;
+    }
+    .homePageFirstSection p span {
+        display: none;
+    }
+    .homePageFirstSection p {
+        width: 100%;
+        margin-top: 5px;
+        padding: 0px 20px;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 700px;
+        margin: 0% auto;
+        text-align: center;
+    }
+    .homePageFirstSection a button {
+        font-weight: 600;
     }
     .barDiv{
         display: flex;
         color: #ffffff;
     }
 
-    .mainNav{
+    .transparentOne{
+        min-height: 600px;
+    }
+    
+    .mainNav, .mainInnerNav{
         justify-content: space-between;
         padding: 0px 20px;
     }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .memoriesSectionHome{
+        flex-direction: column;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    .mainBgDiv > div{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .mainBgDiv .gridSystem{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainIcon{
+        width: calc(100vw - 10vw);
+    }
+    .gridSystem a{
+        max-width: calc(100vw - 10vw);
+        width: 100%;
+        overflow: hidden;
+    }
+    .transparentOne{
+        min-height: 400px;
+    }
+    .mainBgDiv .gridSystem .imageDiv img{
+        max-width: 400px;
+        height: 290px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    html{
+        font-size: 3.2vw;
+    }
+
 }

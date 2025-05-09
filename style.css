@@ -1062,6 +1062,100 @@ body {
     margin-top: -5px;
 }
 
+.locationFrame{
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px 0px;
+    aspect-ratio: 16/7;
+}
+
+.formMainBgDiv{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('./Assests/Images/bgImage.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formMainBgDiv > div:not(.stayConnectedHdg){
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 90%;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.9rem;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0% auto;
+}
+
+.formMainBgDiv > .iconsMain > a:hover{
+    transform: scale(0.9);
+    opacity: 0.90;
+    transition: 0.4s all ease;
+}
+.formMainBgDiv > .iconsMain > a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #84795D;
+    cursor: pointer;
+}
+.formMainBgDiv > .iconsMain{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    gap: 6px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.specialOne{
+    text-decoration: none;
+    color: #000000;
+}
+
+.lastOneFormMain{
+    padding-bottom: 60px;
+}
+
+.stayConnectedHdg{
+    margin-top: -40px;
+    text-transform: uppercase;
+    color: #84795d;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.locationFrameDiv{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #FFF6F2;
+}
+
 @media only screen and (min-width: 2000px) {
     html{
         font-size: 18px;

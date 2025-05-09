@@ -1,12 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const handlePageChange = (pageId) => {
-        const sections = document.querySelectorAll('.section');
-        const activeSection = document.getElementById(pageId);
-        sections.forEach((section) => section.classList.remove('active'));
-        if (activeSection) {
-            activeSection.classList.add('active');
-        }
+const handlePageChange = (pageId) => {
+    const sections = document.querySelectorAll('.section');
+    const activeSection = document.getElementById(pageId);
+    sections.forEach((section) => section.classList.remove('active'));
+    if (activeSection) {
+        activeSection.classList.add('active');
     }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
 
     const handleBarClick = () => {
         const barIcon = document.querySelector('.barIcon');

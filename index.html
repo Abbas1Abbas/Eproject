@@ -170,55 +170,91 @@
 
         </div>
 
-        <div class="ourPortfolioSection">
-            <div class="mainPortfolioSection">
-                <div class="ourProtfolioHdg">Our Portfolio</div>
-                <div class="ourProtfolioHdg">Sneak Peak at our galleries to create your style for your event with us</div>
-                <div class="sliderMainDiv">
-                    <div class="upperDiv">
-                        <div class="arrowLftDiv"><span class="portfolioArrowLft material-symbols-outlined">chevron_left</span></div>
-                        <div class="slidesDiv">
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img1.jpg" alt="Slide 1"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img2.jpg" alt="Slide 2"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img3.jpg" alt="Slide 3"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img4.jpg" alt="Slide 4"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img5.jpg" alt="Slide 5"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img6.jpg" alt="Slide 6"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img7.jpg" alt="Slide 7"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img8.jpg" alt="Slide 8"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img9.jpg" alt="Slide 9"></div>
-                            <div class="slide"><img src="./Assests/Images/Slider/Slider_Img10.jpeg" alt="Slide 10"></div>
-                        </div>
-                        <div class="arrowRgtDiv">
-                            <span class="portfolioArrowRgt material-symbols-outlined">chevron_right</span>
-                        </div>
-                    </div>
-                    <div class="paginationDiv">
-                        <div class="activePag pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                        <div class="pagination"></div>
-                    </div>
+    </section>
+
+    <section class="section" id="contact">
+
+        <div class="formDiv">
+            <form>
+                <div class="getAQuote">Get A Quote</div>
+                <div class="playWriteFont HdgQuote">Plan your dream wedding today!</div>
+                <div class="rowForm">
+                    <div><div class="formSubHdg">First Name</div><input placeholder="First Name" type="text"></div>
+                    <div><div class="formSubHdg">Email</div><input placeholder="Email" type="email"></div>
                 </div>
-            </div>
+                <div class="rowForm">
+                    <div><div class="formSubHdg">Contact Number</div><input required type="number"></div>
+                    <div><div class="formSubHdg">Event Date</div><input required type="date" min="{{new Date().toISOString().split('T')[0]}}"></div>
+                </div>
+                <div class="rowForm">
+                    <div><div class="formSubHdg">Event Detail</div><input type="text"></div>
+                    <div><div class="formSubHdg">Country Where You Are Currently Lived</div><input type="text"></div>
+                </div>
+                <div class="messageBox"><div class="formSubHdg">Message</div><textarea placeholder="Write a message ..." name="messageTexterea" id="messageTexterea"></textarea></div>
+                <div class="btnDiv"><button>Submit Form</button></div>
+            </form>
         </div>
 
 
     </section>
-
-    <section class="section" id="contact">Contact</section>
     <section class="section" id="forgotPassword">Forgot Password</section>
     <section class="section" id="gallary">Gallary</section>
     <section class="section" id="login">Login</section>
     <section class="section" id="register">Register</section>
 
-
+        <footer id="footer">
+            <div class="footerUpper">
+                <div class="footerAboutSection">
+                    <div class="footerHdg">About Us</div>
+                    <p>The Creators is an event management company based in Karachi that caters to events ranging from formal business meetings to adventurous domestic tours and lavish weddings. We are an all-rounder, tapping various verticals when it comes down to celebrating the grand way.</p>
+                </div>
+                <div class="footerPagesSection">
+                    <div class="footerHdg">Pages</div>
+                    <ul class="footerList">
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span> <a href="#">Event Videos</a></li>
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span> <a href="#">Gallary</a></li>
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span> <a href="#">Thematic Events</a></li>
+                    </ul>
+                </div>
+                <div class="footerHelpSection">
+                    <div class="footerHdg">Help</div>
+                    <ul class="footerList">
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span><a href="#">Photography Packages</a></li>
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span><a href="#">Food & Catering</a></li>
+                        <li><span class="material-symbols-outlined">arrow_forward_ios</span><a href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footerSocialMediaSection">
+                    <div class="textCenter footerHdg">Social Media</div>
+                    <div class="footerIconsDiv">
+                        <a target="_blank" href="https://www.facebook.com"><i class="icon fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com"><i class="icon fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.youtube.com"><i class="icon fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com"><i class="icon fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <img src="./Assests/Images/socialMediaBar.png" alt="">
+                </div>
+            </div>
+            <div class="footerMiddle">
+                <div><span>Address:</span> 12/C, Suite # 2, Plot, Main South Park Avenue, D.H.A Phase II Extension Defence Housing Authority, Karachi, 75500, Pakistan</div>
+                <div><a href="mailto:info@thecreatorsevents.com">Info@thecreatorsevents.com</a> |  <a href="tel:923009211292">+92-300-9211292</a>, <a href="tel:923112234346">+92-311-2234346</a></div>
+            </div>
+            <div class="footerEnd">
+                <div class="copyRight">© 2022, Company Inc. All rights reserved. @ The Creatorz Events</div>
+                <div class="iconDivsFooterEnd">
+                    <a target="_blank" href="https://www.facebook.com"><i class="icon fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com"><i class="icon fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com"><i class="icon fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com"><i class="icon fa-brands fa-linkedin"></i></a>
+                </div>
+                <ul class="footerLinksList">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </footer>
 
 
     <script src="script.js"></script>

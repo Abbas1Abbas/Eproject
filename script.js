@@ -6,69 +6,44 @@ const handlePageChange = (pageId) => {
         activeSection.classList.add('active');
     }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const handleBarClick = () => {
-        const barIcon = document.querySelector('.barIcon');
-        const mobView = document.querySelector('.mobView');
-
-        if (barIcon && mobView) {
-            barIcon.addEventListener('click', () => {
-                barIcon.classList.toggle('fa-xmark');
-                mobView.classList.toggle('activeMob');
-            });
-        }
-    }
-
-    const handlePortfolioSlider = () => {
-        const portfolioArrowRgt = document.querySelector('.portfolioArrowRgt');
-        const portfolioArrowLft = document.querySelector('.portfolioArrowLft');
-        const slides = document.querySelectorAll('.upperDiv .slidesDiv .slide');
-        const paginations = document.querySelectorAll('.paginationDiv .pagination');
-        let index = 0;
-    
-        const updateSlidePosition = () => {
-            const offset = -(index * 100); // Assuming each slide is 100% wide
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(${offset}%)`;
-            });
-    
-            // Update active pagination dot
-            paginations.forEach(dot => dot.classList.remove('activePag'));
-            if (paginations[index]) {
-                paginations[index].classList.add('activePag');
-            }
-        }
-    
-        if (portfolioArrowLft && portfolioArrowRgt && slides.length > 0) {
-            portfolioArrowLft.addEventListener('click', () => {
-                if (index > 0) {
-                    index--;
-                    updateSlidePosition();
-                }
-            });
-    
-            portfolioArrowRgt.addEventListener('click', () => {
-                if (index < slides.length - 1) {
-                    index++;
-                    updateSlidePosition();
-                }
-            });
-        }
-    
-        // Add click event to pagination dots
-        paginations.forEach((dot, i) => {
-            dot.addEventListener('click', () => {
-                index = i;
-                updateSlidePosition();
-            });
+const handleBarClick = () => {
+    const barIcon = document.querySelector('.barIcon');
+    const mobView = document.querySelector('.mobView');
+    if (barIcon && mobView) {
+        barIcon.addEventListener('click', () => {
+            barIcon.classList.toggle('fa-xmark');
+            mobView.classList.toggle('activeMob');
         });
-    
-        updateSlidePosition(); // set initial position
     }
-    
+}
 
-    handlePortfolioSlider();
-    handleBarClick();
-});
+const gallaryHandler = (className) => {
+    let linksLis = document.querySelectorAll('.linkDivGallary li');
+    let gallaryImages = document.querySelectorAll('.gallaryImage');
+
+    linksLis.forEach((linkLi) => {
+        linkLi.addEventListener('click', () => {
+
+            linksLis.forEach((link) => link.classList.remove('activeOne'));
+            linkLi.classList.add('activeOne');
+
+            gallaryImages.forEach((image) => {
+                image.classList.remove('activeGallaryImages');
+                setTimeout(() => {
+                    image.classList.remove('block');
+                    image.classList.add('none');
+                }, 300);
+            });
+
+            setTimeout(() => {
+                document.querySelectorAll(`.${className}`).forEach((image) => {
+                    image.classList.remove('none');
+                    image.classList.add('activeGallaryImages');
+                });
+            }, 300);
+        });
+    });
+};
+
+
+handleBarClick();

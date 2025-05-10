@@ -1,4 +1,4 @@
-::selection{
+::selection {
     background-color: rgb(202, 67, 112);
     color: #ffffff;
 }
@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
@@ -22,15 +22,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.notSelectable{
+.notSelectable {
     user-select: none;
 }
 
-.section{
+.section {
     display: none;
 }
 
-.active{
+.active {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ body {
 
 /* header */
 
-.header{
+.header {
     width: 100%;
     height: auto;
     display: flex;
@@ -52,7 +52,7 @@ body {
 }
 
 
-.logo{
+.logo {
     width: 120px;
     max-width: 35%;
     height: auto;
@@ -60,7 +60,7 @@ body {
     aspect-ratio: 1/1;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: auto;
     background-image: url('./Assests/Images/bgImage.jpg');
@@ -73,13 +73,16 @@ body {
     background-repeat: no-repeat;
 }
 
-.mainInnerNav{
+.mainInnerNav {
     max-width: 2500px;
 }
-.mainNav{
-    background-color: rgba(0,0,0,0.69);
+
+.mainNav {
+    background-color: rgba(0, 0, 0, 0.69);
 }
-.mainInnerNav, .mainNav{
+
+.mainInnerNav,
+.mainNav {
     display: flex;
     align-items: center;
     top: 0px;
@@ -92,7 +95,7 @@ body {
 }
 
 
-.navLinks{
+.navLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +104,7 @@ body {
     gap: 20px;
 }
 
-.navLinks li{
+.navLinks li {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -113,7 +116,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.navLinks li::before{
+.navLinks li::before {
     position: absolute;
     width: 2px;
     height: 100%;
@@ -122,24 +125,24 @@ body {
     right: -13px;
 }
 
-.navLinks li a{
+.navLinks li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.navLinks li:hover{
+.navLinks li:hover {
     opacity: 0.8;
 }
 
-.mobView .navLinks li:hover{
+.mobView .navLinks li:hover {
     opacity: 1;
 }
 
-.navLinks li:last-child::before{
+.navLinks li:last-child::before {
     height: 0%;
 }
 
-.iconsDiv{
+.iconsDiv {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -148,30 +151,32 @@ body {
     font-size: 1.3rem;
 }
 
-.iconsDiv a{
+.iconsDiv a {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
 }
 
-.iconsDiv a:hover{
+.iconsDiv a:hover {
     opacity: 0.7;
     transform: scale(1.05);
 }
 
-.barDiv{
+.barDiv {
     display: none;
 }
 
-.barDiv > i{
+.barDiv>i {
     font-size: 1.8rem;
     cursor: pointer;
 }
-.barDiv > i:hover{
+
+.barDiv>i:hover {
     transition: 0.3s all ease;
     transform: scale(1.05);
 }
-.barDiv > i:active{
+
+.barDiv>i:active {
     transition: 0.3s all ease;
     transform: scale(0.95);
 }
@@ -180,7 +185,7 @@ body {
 
 /* footer  */
 
-.homePageFirstSection{
+.homePageFirstSection {
     width: 100%;
     height: 85vh;
     background-position: center center;
@@ -195,7 +200,7 @@ body {
     position: relative;
 }
 
-.homePageFirstSection h1{
+.homePageFirstSection h1 {
     font-size: 0.8rem;
     color: #CA4370;
     font-weight: 500;
@@ -206,7 +211,7 @@ body {
     margin-bottom: 10px;
 }
 
-.homePageFirstSection h1::before{
+.homePageFirstSection h1::before {
     content: '';
     position: absolute;
     width: 210px;
@@ -217,21 +222,21 @@ body {
     transform: translate(-50%, 0%);
 }
 
-.homePageFirstSection div{
+.homePageFirstSection div {
     width: 100%;
     height: auto;
     margin: 10px 0px;
     text-align: center;
 }
 
-.homePageFirstSection div h2{
+.homePageFirstSection div h2 {
     color: #84795d;
     font-size: 2.2rem;
     line-height: 2.4rem;
     font-weight: 600;
 }
 
-.homePageFirstSection p{
+.homePageFirstSection p {
     width: 100%;
     margin: 0% auto;
     padding: 0px 10px;
@@ -243,11 +248,11 @@ body {
     text-align: center;
 }
 
-.homePageFirstSection a{
+.homePageFirstSection a {
     text-decoration: none;
 }
 
-.homePageFirstSection a button{
+.homePageFirstSection a button {
     padding: 0;
     margin: 0;
     background-color: white;
@@ -266,12 +271,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.arrowDownIcon{
+.arrowDownIcon {
     font-weight: 600;
     font-size: 1.2rem;
 }
 
-.homePageFirstSection a button::before{
+.homePageFirstSection a button::before {
     position: absolute;
     content: '';
     top: -10px;
@@ -281,21 +286,22 @@ body {
     left: 0px;
 }
 
-.homePageFirstSection a button:hover{
+.homePageFirstSection a button:hover {
     margin-top: 40px;
     transition: 0.4s all ease;
 }
 
-.mobView{
+.mobView {
     display: none;
 }
 
-.mobView{
+.mobView {
     width: 100%;
     height: auto;
     flex-direction: column;
 }
-.mainHomePageSecondSection{
+
+.mainHomePageSecondSection {
     width: 100%;
     height: auto;
     display: flex;
@@ -305,7 +311,8 @@ body {
     padding-bottom: 60px;
     background-color: rgb(255, 246, 242);
 }
-.homePageSecondSection{
+
+.homePageSecondSection {
     width: 100%;
     height: auto;
     display: flex;
@@ -317,13 +324,76 @@ body {
     flex-direction: column;
 }
 
-.mainIcon{
+.mainIcon {
     width: 20rem;
     height: auto;
     margin-bottom: 0.1rem;
 }
 
-.mobView ul{
+.gallaryIcon {
+    width: 13rem;
+    height: auto;
+    margin-bottom: 0.1rem;
+}
+
+.gallaryHdg {
+    text-transform: uppercase;
+    margin-top: -30px;
+    line-height: 4rem;
+    font-size: 3rem;
+    color: #84795D;
+    font-weight: 500;
+    letter-spacing: 3.5px;
+    position: relative;
+}
+
+.gallaryHdg::after {
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #000000;
+    left: 0px;
+    bottom: -4px;
+    content: '';
+}
+
+.gallaryFirstSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 246, 242);
+    justify-content: center;
+}
+
+
+.linkDivGallary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(255, 246, 242);
+    gap: 20px;
+    list-style: none;
+}
+
+.linkDivGallary li {
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.linkDivGallary li.activeOne {
+    color: #9C0B0B;
+}
+
+.mobView ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,27 +403,28 @@ body {
     background-color: #000000;
 }
 
-.mobView ul li{
+.mobView ul li {
     text-align: center;
     padding: 10px 0px;
     width: 100%;
 }
-.mobView ul li:hover{
+
+.mobView ul li:hover {
     color: #ffffff;
     background-color: #E11919;
     transition: 0.3s all ease;
 }
 
-.mobView ul li::before{
+.mobView ul li::before {
     width: 0%;
 }
 
-.activeMob{
+.activeMob {
     display: flex;
 }
 
 
-.welcomeLine{
+.welcomeLine {
     width: 100%;
     font-size: 1.2rem;
     text-align: center;
@@ -366,7 +437,7 @@ body {
     font-weight: 500;
 }
 
-.hdWelcomeSecond{
+.hdWelcomeSecond {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2rem;
@@ -376,7 +447,7 @@ body {
     margin-bottom: 30px;
 }
 
-.mainBgDiv{
+.mainBgDiv {
     width: 100%;
     height: auto;
     background-attachment: fixed;
@@ -385,7 +456,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.mainBgDiv > div{
+.mainBgDiv>div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
@@ -393,7 +464,7 @@ body {
     height: auto;
 }
 
-.gridSystem{
+.gridSystem {
     padding: 0% 7%;
     background-color: rgb(255, 246, 242);
     display: flex;
@@ -403,7 +474,7 @@ body {
     width: 100%;
 }
 
-.gridSystem a{
+.gridSystem a {
     width: 100%;
     height: 320px;
     display: flex;
@@ -414,26 +485,26 @@ body {
     flex-direction: column;
 }
 
-.gridSystem a .img1{
+.gridSystem a .img1 {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 30px 0px 30px 0px;
 }
 
-.gridSystem a .img2{
+.gridSystem a .img2 {
     width: 100%;
     object-fit: cover;
     height: 250px;
     border-radius: 0px 30px 0px 30px;
 }
 
-.gridSystem a{
+.gridSystem a {
     color: #222222;
     font-weight: 500;
 }
 
-.gridSystem a div{
+.gridSystem a div {
     color: rgb(132, 121, 93);
     cursor: pointer;
     font-family: "Overlock", sans-serif;
@@ -443,12 +514,13 @@ body {
     font-weight: 400;
 }
 
-.transparentOne{
+.transparentOne {
     width: 100%;
     height: 100%;
     padding: 2%;
 }
-.transparentOne > div{
+
+.transparentOne>div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -459,7 +531,7 @@ body {
     background-color: rgba(255, 255, 255, 0.80);
 }
 
-.bellDiv{
+.bellDiv {
     width: 70px;
     border: 3px solid rgb(173, 140, 125);
     height: 70px;
@@ -471,18 +543,18 @@ body {
     background-color: #ffffff;
 }
 
-.playWriteFont{
+.playWriteFont {
     margin-top: 10px;
     font-family: "Sail", system-ui;
 }
 
-.playWriteFontHdg{
+.playWriteFontHdg {
     font-weight: 400;
     font-size: 2.1rem;
     color: rgba(132, 121, 93, 0.97);
 }
 
-.eventManagementCompany{
+.eventManagementCompany {
     color: rgb(213, 45, 101);
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -494,12 +566,12 @@ body {
     text-align: center;
 }
 
-.transparentOne > div > button a{
+.transparentOne>div>button a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.transparentOne > div > button{
+.transparentOne>div>button {
     padding: 0.9rem 1.8rem;
     margin-top: 3px;
     border: none;
@@ -514,7 +586,7 @@ body {
     background-color: rgba(249, 102, 97);
 }
 
-.transparentOne > div > .iconsMain{
+.transparentOne>div>.iconsMain {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -525,23 +597,23 @@ body {
     margin-top: 10px;
 }
 
-.transparentOne > div > .iconsMain *{
+.transparentOne>div>.iconsMain * {
     text-decoration: none;
     transition: 0.3s all ease;
     color: rgb(132, 121, 93);
 }
 
-.transparentOne > div > .iconsMain *:hover{
+.transparentOne>div>.iconsMain *:hover {
     opacity: 0.8;
     transform: scale(0.95);
 }
 
-.transparentOne > div > .iconsMain *:active{
+.transparentOne>div>.iconsMain *:active {
     opacity: 1;
     transform: scale(1.05);
 }
 
-.memoriesSectionHome{
+.memoriesSectionHome {
     width: 100%;
     background-size: cover;
     background-position: top top;
@@ -557,28 +629,28 @@ body {
     gap: 15px;
 }
 
-.transparentOne > div > button:hover{
+.transparentOne>div>button:hover {
     background-color: rgb(251, 74, 68);
 }
 
-.memoriesSectionHome > div{
+.memoriesSectionHome>div {
     color: #000000;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.memoriesSectionHome > div > a{
-    color:   rgb(251, 74, 68);
+.memoriesSectionHome>div>a {
+    color: rgb(251, 74, 68);
     text-decoration: none;
 }
 
-.memoriesSectionHome button{
+.memoriesSectionHome button {
     padding: 10px 20px;
     background-color: #ffffff;
     border: 1px solid #000000;
     font-family: "Poppins", sans-serif;
-    color:  rgb(202, 67, 112);
+    color: rgb(202, 67, 112);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -590,12 +662,12 @@ body {
     transition: 0.3s all ease;
 }
 
-.memoriesSectionHome button:hover{
+.memoriesSectionHome button:hover {
     color: #000000;
     margin-top: 15px;
 }
 
-.homePageMrAndMrsSection{
+.homePageMrAndMrsSection {
     width: 100%;
     height: 430px;
     background-attachment: fixed;
@@ -604,7 +676,7 @@ body {
     background-size: cover;
 }
 
-.whoAreWeSection{
+.whoAreWeSection {
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px 0px;
     background-color: rgb(255, 246, 242);
     width: 100%;
@@ -618,14 +690,14 @@ body {
     margin-top: -130px;
 }
 
-.weOrangize{
+.weOrangize {
     font-size: 2.3rem;
     font-weight: 100;
     margin-top: 7px;
     color: rgb(132, 121, 93);
 }
 
-.whoAreWeHdg{
+.whoAreWeHdg {
     margin-top: 40px;
     color: rgba(128, 117, 88, 0.865);
     text-transform: uppercase;
@@ -633,7 +705,7 @@ body {
     font-weight: 200;
 }
 
-.paraghWhoAreWe{
+.paraghWhoAreWe {
     width: 100%;
     padding: 15px 20px;
     font-size: 1rem;
@@ -643,18 +715,18 @@ body {
     line-height: 1.7rem;
 }
 
-.hdgWhoAreWe{
+.hdgWhoAreWe {
     font-weight: 700;
     padding: 15px 0px;
     font-size: 1rem;
     color: rgba(1, 22, 40, 0.75);
 }
 
-.pairIcon{
+.pairIcon {
     width: 17rem;
 }
 
-.targumaDiv{
+.targumaDiv {
     width: 100%;
     height: auto;
     text-align: center;
@@ -665,7 +737,7 @@ body {
     line-height: 1.5rem;
 }
 
-.duaDiv{
+.duaDiv {
     width: 100%;
     height: auto;
     line-height: 2.45rem;
@@ -676,7 +748,7 @@ body {
     color: rgb(132, 121, 93);
 }
 
-#pairSection{
+#pairSection {
     width: 100%;
     display: flex;
     max-width: 2000px;
@@ -686,7 +758,7 @@ body {
     flex-direction: column;
 }
 
-.videoImage{
+.videoImage {
     width: 100%;
     max-width: 75%;
     margin-bottom: 100px;
@@ -704,26 +776,29 @@ body {
     background-color: orange;
 }
 
-.videoBtn > span{
+.videoBtn>span {
     color: #E11919;
     cursor: pointer;
     font-size: 65px;
 }
 
-#footer{
+#footer {
     background-color: #FFF6F2;
     gap: 15px;
     height: auto;
     padding: 10px 5%;
     padding-top: 5%;
 }
-#footer > *{
+
+#footer>* {
     align-items: start;
 }
-#footer ul{
+
+#footer ul {
     list-style: none;
 }
-.footerUpper{
+
+.footerUpper {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -731,14 +806,14 @@ body {
     justify-content: center;
 }
 
-.footerAboutSection{
+.footerAboutSection {
     text-align: left;
     width: 30%;
     align-items: left;
     justify-content: left;
 }
 
-.footerHdg{
+.footerHdg {
     color: #84795D;
     font-family: "Poppins", Sans-serif;
     font-size: 1em;
@@ -747,20 +822,22 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-.footerHdg::before{
+
+.footerHdg::before {
     content: "[";
     color: #ffab00;
     line-height: 1rem;
     margin-right: 5px;
 }
-.footerHdg::after{
+
+.footerHdg::after {
     content: "]";
     color: #ffab00;
     line-height: 1rem;
     margin-left: 5px;
 }
 
-.footerAboutSection p{
+.footerAboutSection p {
     margin-top: 10px;
     color: rgb(0, 0, 0);
     font-family: "Poppins", sans-serif;
@@ -771,17 +848,17 @@ body {
     padding-right: 6%;
 }
 
-.footerList{
+.footerList {
     list-style-type: none;
     margin-top: 5px;
 }
 
-.footerList li span{
+.footerList li span {
     font-size: 14px;
     font-weight: 500;
 }
 
-.footerList li{
+.footerList li {
     display: flex;
     width: 100%;
     align-items: center;
@@ -792,7 +869,8 @@ body {
     position: relative;
     font-size: 0.9rem;
 }
-.footerList>*:not(:last-child)::before{
+
+.footerList>*:not(:last-child)::before {
     position: absolute;
     width: 90%;
     left: 0px;
@@ -800,32 +878,35 @@ body {
     bottom: 0px;
     background-color: #00000028;
     height: 1px;
-} 
+}
 
-.footerHelpSection, .footerPagesSection{
+.footerHelpSection,
+.footerPagesSection {
     width: 20%;
 }
 
-.footerSocialMediaSection{
+.footerSocialMediaSection {
     width: 30%;
 }
 
-.footerList li a{
+.footerList li a {
     text-decoration: none;
     color: #000000;
 }
 
-.textCenter{
+.textCenter {
     text-align: center !important;
 }
-.footerSocialMediaSection{
+
+.footerSocialMediaSection {
     align-items: center;
     gap: 15px;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.footerIconsDiv{
+
+.footerIconsDiv {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -834,17 +915,17 @@ body {
     gap: 5px;
 }
 
-.footerSocialMediaSection > .footerIconsDiv > a{
+.footerSocialMediaSection>.footerIconsDiv>a {
     color: #84795d;
 }
 
-.footerSocialMediaSection > .footerIconsDiv > a:hover{
+.footerSocialMediaSection>.footerIconsDiv>a:hover {
     opacity: 0.75;
     transition: 0.2s all ease;
     transform: scale(0.95);
 }
 
-.footerSocialMediaSection > .footerIconsDiv{
+.footerSocialMediaSection>.footerIconsDiv {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -853,7 +934,7 @@ body {
     justify-content: center;
 }
 
-.footerMiddle{
+.footerMiddle {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -862,22 +943,24 @@ body {
     padding: 25px 0px;
 }
 
-.footerMiddle div{
+.footerMiddle div {
     font-size: 0.9rem;
     font-weight: 400;
 }
-.footerMiddle div span{
+
+.footerMiddle div span {
     font-weight: 600;
     font-size: 1rem;
 }
-.footerMiddle div a{
+
+.footerMiddle div a {
     font-size: 0.93rem;
     text-decoration: none;
     font-weight: 600;
     color: #222222;
 }
 
-.footerEnd{
+.footerEnd {
     width: 100%;
     height: auto;
     display: flex;
@@ -887,12 +970,12 @@ body {
     padding: 15px 0px;
 }
 
-.copyRight{
+.copyRight {
     font-weight: 400;
     font-size: 0.8rem;
 }
 
-.footerLinksList{
+.footerLinksList {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -900,7 +983,7 @@ body {
     gap: 10px;
 }
 
-.iconDivsFooterEnd{
+.iconDivsFooterEnd {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -909,7 +992,7 @@ body {
     font-size: 0.9rem;
 }
 
-.iconDivsFooterEnd a{
+.iconDivsFooterEnd a {
     width: 30px;
     height: 30px;
     color: #000000;
@@ -921,7 +1004,7 @@ body {
     border-radius: 50%;
 }
 
-.iconDivsFooterEnd a:hover{
+.iconDivsFooterEnd a:hover {
     background-color: rgba(26, 26, 25, 0.1);
     transform: scale(0.9);
     opacity: 0.9;
@@ -936,11 +1019,12 @@ body {
     color: #000000;
 }
 
-.formDiv{
+.formDiv {
     width: 100%;
     height: auto;
 }
-.formDiv > form{
+
+.formDiv>form {
     border-radius: 20px;
     padding: 45px 15px;
     display: flex;
@@ -954,14 +1038,14 @@ body {
     margin: 0% auto;
 }
 
-.getAQuote{
+.getAQuote {
     color: #84795D;
     font-weight: 500;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-.rowForm{
+.rowForm {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -970,13 +1054,15 @@ body {
     justify-content: center;
     gap: 10px;
 }
-.rowForm > div{
+
+.rowForm>div {
     display: flex;
     flex-direction: column;
     gap: 6px;
     width: 50%;
 }
-.formSubHdg{
+
+.formSubHdg {
     font-size: 1rem;
     width: 100%;
     text-align: left;
@@ -985,7 +1071,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.messageBox{
+.messageBox {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -994,7 +1080,7 @@ body {
     width: 100%;
 }
 
-.messageBox > textarea{
+.messageBox>textarea {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -1010,7 +1096,7 @@ body {
     outline: none;
 }
 
-.btnDiv{
+.btnDiv {
     width: 100%;
     height: auto;
     padding: 10px 0px;
@@ -1020,7 +1106,7 @@ body {
     justify-content: center;
 }
 
-.btnDiv > button{
+.btnDiv>button {
     font-family: "Poppins", sans-serif;
     background-color: rgba(251, 26, 26, 1);
     color: #ffffff;
@@ -1032,16 +1118,18 @@ body {
     outline: none;
     border: 1px solid rgba(251, 26, 26, 1);
 }
-.btnDiv > button:hover{
+
+.btnDiv>button:hover {
     background-color: white;
     color: rgba(251, 26, 26, 1);
     transition: 0.1s all ease-out;
 }
 
-.rowForm > div > *{
+.rowForm>div>* {
     width: 100%;
 }
-.rowForm > div > input{
+
+.rowForm>div>input {
     width: 100%;
     border: 1px solid rgba(128, 128, 128, 0.581);
     color: #84795D;
@@ -1052,7 +1140,8 @@ body {
     font-size: 1rem;
     padding: 10px 15px;
 }
-.HdgQuote{
+
+.HdgQuote {
     color: #84795d;
     font-family: "Sail", Sans-serif;
     font-size: 3rem;
@@ -1062,14 +1151,14 @@ body {
     margin-top: -5px;
 }
 
-.locationFrame{
+.locationFrame {
     width: 80%;
     max-width: 1000px;
     margin: 30px 0px;
     aspect-ratio: 16/7;
 }
 
-.formMainBgDiv{
+.formMainBgDiv {
     width: 100%;
     height: auto;
     padding: 10px 0px;
@@ -1085,7 +1174,7 @@ body {
     gap: 10px;
 }
 
-.formMainBgDiv > div:not(.stayConnectedHdg){
+.formMainBgDiv>div:not(.stayConnectedHdg) {
     width: 80%;
     display: flex;
     align-items: center;
@@ -1100,12 +1189,13 @@ body {
     margin: 0% auto;
 }
 
-.formMainBgDiv > .iconsMain > a:hover{
+.formMainBgDiv>.iconsMain>a:hover {
     transform: scale(0.9);
     opacity: 0.90;
     transition: 0.4s all ease;
 }
-.formMainBgDiv > .iconsMain > a{
+
+.formMainBgDiv>.iconsMain>a {
     width: 30px;
     height: 30px;
     display: flex;
@@ -1116,28 +1206,29 @@ body {
     color: #84795D;
     cursor: pointer;
 }
-.formMainBgDiv > .iconsMain{
+
+.formMainBgDiv>.iconsMain {
     display: flex;
     flex-direction: row;
     font-size: 1.3rem;
     gap: 6px;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
 }
 
-.specialOne{
+.specialOne {
     text-decoration: none;
     color: #000000;
 }
 
-.lastOneFormMain{
+.lastOneFormMain {
     padding-bottom: 60px;
 }
 
-.stayConnectedHdg{
+.stayConnectedHdg {
     margin-top: -40px;
     text-transform: uppercase;
     color: #84795d;
@@ -1145,7 +1236,7 @@ body {
     font-size: 2.2rem;
 }
 
-.locationFrameDiv{
+.locationFrameDiv {
     width: 100%;
     height: auto;
     padding: 10px 0px;
@@ -1156,68 +1247,121 @@ body {
     background-color: #FFF6F2;
 }
 
+.gallaryDiv {
+    padding: 30px 5%;
+    width: 100%;
+    column-count: 3;
+    column-gap: 15px;
+}
+.gallaryImage {
+    width: 100%;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    opacity: 0;
+    transform: scale(0.8);
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    display: block;
+}
+
+.none {
+    display: none !important;
+}
+
+.block{
+    display: block !important;
+}
+
+.activeGallaryImages {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    visibility: visible !important;
+}
+
+.gallaryImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
 @media only screen and (min-width: 2000px) {
-    html{
+    html {
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 1380px) {
-    .footerAboutSection{
+    .footerAboutSection {
         width: 100%;
         margin: 20px 0px;
     }
-    .footerUpper{
+
+    .footerUpper {
         display: block;
     }
-    .footerPagesSection, .footerHelpSection{
+
+    .footerPagesSection,
+    .footerHelpSection {
         float: left;
         width: 33.33%;
     }
-    .footerSocialMediaSection{
+
+    .footerSocialMediaSection {
         width: 33.33%;
     }
 }
 
 @media only screen and (max-width: 1050px) {
-    .mainBgDiv > div{
+    .mainBgDiv>div {
         grid-template-columns: 1fr;
     }
-    .footerEnd{
+
+    .footerEnd {
         display: block;
     }
-    .copyRight{
+
+    .copyRight {
         margin-bottom: 10px;
     }
-    .iconDivsFooterEnd{
+
+    .iconDivsFooterEnd {
         float: left;
     }
-    .mainBgDiv .gridSystem{
+
+    .mainBgDiv .gridSystem {
         display: grid;
         gap: 15px;
         grid-template-columns: 1fr 1fr;
     }
 
-    .transparentOne{
+    .transparentOne {
         min-height: 500px;
     }
 }
 
 
 @media only screen and (max-width: 920px) {
-    .navLinks, .iconsDiv{
+
+    .navLinks,
+    .iconsDiv {
         display: none;
     }
-    .html{
+
+    .html {
         font-size: 15px;
     }
+
     .homePageFirstSection div h2 {
         color: #84795d;
         font-weight: 600;
     }
+
     .homePageFirstSection p span {
         display: none;
     }
+
     .homePageFirstSection p {
         width: 100%;
         margin-top: 5px;
@@ -1228,38 +1372,51 @@ body {
         margin: 0% auto;
         text-align: center;
     }
+
     .homePageFirstSection a button {
         font-weight: 600;
     }
-    .barDiv{
+
+    .barDiv {
         display: flex;
         color: #ffffff;
     }
 
-    .transparentOne{
+    .transparentOne {
         min-height: 600px;
     }
-    
-    .mainNav, .mainInnerNav{
+
+    .mainNav, .mainInnerNav {
         justify-content: space-between;
         padding: 0px 20px;
     }
 }
 
 @media only screen and (max-width: 720px) {
-    .rowForm{
+    .linkDivGallary{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .rowForm {
         flex-direction: column;
     }
-    .rowForm > div{
+
+    .rowForm>div {
         width: 100%;
     }
-    .HdgQuote{
+
+    .gallaryDiv {
+        column-count: 2;
+    }
+
+    .HdgQuote {
         width: 100%;
         text-align: center;
         line-height: 2.8rem;
         font-size: 2.4rem;
     }
-    .footerEnd{
+
+    .footerEnd {
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
@@ -1267,30 +1424,31 @@ body {
         justify-content: center;
         text-align: center;
     }
-    .footerEnd > *{
+
+    .footerEnd>* {
         width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
     }
 
-    .memoriesSectionHome{
+    .memoriesSectionHome {
         flex-direction: column;
         padding: 0px 20px;
         text-align: center;
     }
 
-    .footerPagesSection{
+    .footerPagesSection {
         width: 50%;
         float: left;
     }
 
-    .footerHelpSection{
+    .footerHelpSection {
         float: right;
         width: 50%;
     }
 
-    .footerSocialMediaSection{
+    .footerSocialMediaSection {
         width: 100%;
         padding-top: 20px;
         justify-content: left;
@@ -1299,40 +1457,44 @@ body {
         padding-left: 5px;
     }
 
-    .textCenter{
+    .textCenter {
         text-align: left !important;
     }
 
-    .footerIconsDiv{
+    .footerIconsDiv {
         justify-content: left !important;
     }
 
-    html{
+    html {
         font-size: 14px;
     }
 
-    .mainBgDiv > div{
+    .mainBgDiv>div {
         grid-template-columns: 1fr;
         gap: 0px;
     }
 
-    .mainBgDiv .gridSystem{
+    .mainBgDiv .gridSystem {
         padding: 20px 0px;
         display: flex;
         flex-direction: column;
     }
-    .mainIcon{
+
+    .mainIcon {
         width: calc(100vw - 10vw);
     }
-    .gridSystem a{
+
+    .gridSystem a {
         max-width: calc(100vw - 10vw);
         width: 100%;
         overflow: hidden;
     }
-    .transparentOne{
+
+    .transparentOne {
         min-height: 400px;
     }
-    .mainBgDiv .gridSystem .imageDiv img{
+
+    .mainBgDiv .gridSystem .imageDiv img {
         max-width: 400px;
         height: 290px;
     }
@@ -1340,11 +1502,16 @@ body {
 
 @media only screen and (max-width: 440px) {
 
-    html{
+    .gallaryDiv {
+        column-count: 1;
+    }
+
+    html {
         font-size: 13px;
     }
 
-    .footerPagesSection, .footerHelpSection{
+    .footerPagesSection,
+    .footerHelpSection {
         float: none;
         margin-top: 10px;
         width: 100%;

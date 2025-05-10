@@ -1,11 +1,16 @@
 const handlePageChange = (pageId) => {
-    const sections = document.querySelectorAll('.section');
-    const activeSection = document.getElementById(pageId);
-    sections.forEach((section) => section.classList.remove('active'));
-    if (activeSection) {
-        activeSection.classList.add('active');
+    if(pageId === "about"){
+        handlePageChange('home');
+        const aboutSection = document.getElementById("about");
+        if (aboutSection) aboutSection.scrollIntoView({ behavior: "smooth" });
+    }else{
+        const sections = document.querySelectorAll('.section');
+        const activeSection = document.getElementById(pageId);
+        sections.forEach((section) => section.classList.remove('active'));
+        if (activeSection) activeSection.classList.add('active');
     }
 }
+
 const handleBarClick = () => {
     const barIcon = document.querySelector('.barIcon');
     const mobView = document.querySelector('.mobView');

@@ -80,6 +80,9 @@ const handleLogin = (e) => {
     let email = document.querySelector('.loginEmailInput').value;
     let password = document.querySelector('.loginPassInput').value;
 
+    document.querySelector('.loginEmailInput').value = "";
+    document.querySelector('.loginPassInput').value = "";
+
     if (email.trim() === "" || password.trim() === "") {
         return alert("Please fill in all fields.");
     }
@@ -102,6 +105,9 @@ const handleRegister = (e) => {
     let email = document.querySelector('.registerEmailInput').value;
     let password = document.querySelector('.registerPassInput').value;
 
+    document.querySelector('.registerEmailInput').value = "";
+    document.querySelector('.registerPassInput').value = "";
+
     if (email.trim() === "" || password.trim() === "") return alert("Please fill in all fields.");
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -119,7 +125,6 @@ const handleRegister = (e) => {
     saveUserLocally(users);
     handleAccount(newUser);
 };
-
 
 const getCurrentUser = () => {
     const userString = localStorage.getItem('currentLoginUser');
@@ -139,6 +144,8 @@ const handleForgotPass = (e) => {
     e.preventDefault();
 
     const forgotEmail = document.querySelector('.forgotPassEmailInput').value;
+    document.querySelector('.forgotPassEmailInput').value = "";
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(forgotEmail)) return alert("Please enter a valid email address.");
@@ -194,7 +201,6 @@ const handleLogout = () => {
     handleAccount();
     window.location.reload();
 }
-
 
 handleBarClick();
 getGeoLocation();

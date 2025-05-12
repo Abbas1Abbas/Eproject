@@ -773,7 +773,8 @@ body {
     aspect-ratio: 16/8;
     margin-top: 15px;
     box-shadow: rgba(0, 0, 0, 0.38) 0px 10px 38px -1px;
-    background-color: orange;
+    position: relative;
+    overflow: hidden;
 }
 
 .videoBtn>span {

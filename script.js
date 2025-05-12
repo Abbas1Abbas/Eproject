@@ -120,6 +120,21 @@ const handleRegister = (e) => {
     handleAccount(newUser);
 };
 
+
+const getCurrentUser = () => {
+    const userString = localStorage.getItem('currentLoginUser');
+    if (userString) {
+        try {
+            const user = JSON.parse(userString);
+            if (user?.email && user?.password) {
+                handleAccount(user);
+            }
+        } catch (err) {
+            console.error("Error parsing currentLoginUser from localStorage:", err);
+        }
+    }
+};
+
 const handleForgotPass = (e) => {
     e.preventDefault();
 
@@ -153,8 +168,34 @@ const handleForgotPass = (e) => {
 };
 
 const handleAccount = (userDetail) => {
+    if(!userDetail) return;
+
     console.log("Logged in as:", userDetail.email);
+    localStorage.setItem('currentLoginUser', JSON.stringify(userDetail));
+
+    if (userDetail) {
+        const unauthDiv = document.querySelector('.unAuthenticatedDiv');
+        const authDiv = document.querySelector('.authenticatedDiv');
+
+        if (unauthDiv && authDiv) {
+            unauthDiv.classList.remove('visibleDiv');
+            unauthDiv.classList.add('hiddenDiv');
+
+            authDiv.classList.remove('hiddenDiv');
+            authDiv.classList.add('visibleDiv');
+            document.querySelector('.accountLi').style.display = "none";
+            document.querySelector('.userEmail').innerText = userDetail.email;
+        }
+    }
 };
+
+const handleLogout = () => {
+    localStorage.removeItem('currentLoginUser');
+    handleAccount();
+    window.location.reload();
+}
+
 
 handleBarClick();
 getGeoLocation();
+getCurrentUser();

@@ -30,12 +30,12 @@ const getGeoLocation = () => {
             const mapUrl = `https://www.google.com/maps?q=${lat},${lon}&z=15&output=embed`;
             document.getElementById('locationFrame').src = mapUrl;
         }, (error) => {
-            alert("Unable to fetch location.");
+            alert("Unable to fetch Geo location.");
+            const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.948930091482!2d67.06499137413991!3d24.83142004642121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d2b41f153d1%3A0x2b407599ec1e70f1!2sThe%20Creators%20Events%20I%20Best%20Wedding%20Event%20Planner%20In%20Karachi.!5e0!3m2!1sen!2s!4v1747040633776!5m2!1sen!2s`;
+            document.getElementById('locationFrame').src = mapUrl;
             console.error(error);
         });
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
+    } else alert("Geolocation is not supported by this browser.");
 };
 
 const gallaryHandler = (className) => {

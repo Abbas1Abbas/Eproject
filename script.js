@@ -83,14 +83,9 @@ const handleLogin = (e) => {
     document.querySelector('.loginEmailInput').value = "";
     document.querySelector('.loginPassInput').value = "";
 
-    if (email.trim() === "" || password.trim() === "") {
-        return alert("Please fill in all fields.");
-    }
-
+    if (email.trim() === "" || password.trim() === "") return alert("Please fill in all fields.");
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        return alert("Please enter a valid email address.");
-    }
+    if (!emailRegex.test(email)) return alert("Please enter a valid email address.");
 
     let users = getOldUsersLocally();
     const foundUser = users.find((oldUser) => oldUser.email === email && oldUser.password === password);
@@ -188,7 +183,7 @@ const handleAccount = (userDetail) => {
             unauthDiv.classList.add('hiddenDiv');
             authDiv.classList.remove('hiddenDiv');
             authDiv.classList.add('visibleDiv');
-            document.querySelector('.accountLi').style.display = "none";
+            document.querySelectorAll('.accountLi').forEach((e)=>e.style.display = "none");
             document.querySelector('.userEmail').innerText = userDetail.email;
         }
     }
@@ -203,3 +198,5 @@ const handleLogout = () => {
 handleBarClick();
 getGeoLocation();
 getCurrentUser();
+
+// Completed

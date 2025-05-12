@@ -22,6 +22,7 @@ const handleBarClick = () => {
     }
 }
 
+const getGeoLocation = () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
             const lat = position.coords.latitude;
@@ -36,6 +37,7 @@ const handleBarClick = () => {
     } else {
         alert("Geolocation is not supported by this browser.");
     }
+}
 
 const gallaryHandler = (className) => {
     let linksLis = document.querySelectorAll('.linkDivGallary li');
@@ -67,3 +69,4 @@ const gallaryHandler = (className) => {
 
 
 handleBarClick();
+getGeoLocation();

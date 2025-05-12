@@ -225,11 +225,11 @@
     </section>
 
     <section class="section" id="forgotPassword">
-        <form class="mainForm">
+        <form onsubmit="handleForgotPass(event)" class="mainForm">
             <div class="mainLoginForm"><img src="./Assests/Images/logo.png" alt="Logo" class="logo"></div>
             <div class="formMainHdg">Forgot your Password?</div>
             <div class="formMainPara">Please enter your email address you’d like your password Reset information sent to</div>
-            <div class="formMainCol"><input required type="email" placeholder="Email Address"></div>
+            <div class="formMainCol"><input class="forgotPassEmailInput" required type="email" placeholder="Email Address"></div>
             <div class="loginBtn"><button>Confirm</button></div>
             <div class="tagLineEnd">Back To <span onclick="handlePageChange('login')">Login</span></div>
         </form>
@@ -288,13 +288,13 @@
     </section>
 
     <section class="section" id="login">
-        <form class="mainForm">
+        <form onsubmit="handleLogin(event)" class="mainForm">
             <div class="mainLoginForm"><img src="./Assests/Images/logo.png" alt="Logo" class="logo"></div>
             <button class="loginWith"><span><i class="fa-brands fa-google"></i></span><span>Login With Google</span></button>
             <button class="loginWith"><span><i class="fa-brands fa-facebook-f"></i></span><span>Login With Facebook</span></button>
             <div class="orDiv">or</div>
-            <div class="formMainCol"><div class="formSubHdg">Email</div><input required type="email" placeholder="Email Address"></div>
-            <div class="formMainCol"><div class="formSubHdg">Password</div><input required type="password" placeholder="Password"></div>
+            <div class="formMainCol"><div class="formSubHdg">Email</div><input required class="loginEmailInput" type="email" placeholder="Email Address"></div>
+            <div class="formMainCol"><div class="formSubHdg">Password</div><input class="loginPassInput" required type="password" placeholder="Password"></div>
             <div class="forgotPass" onclick="handlePageChange('forgotPassword')">Forgot Password?</div>
             <div class="loginBtn"><button>Login</button></div>
             <div class="tagLineEnd">Don't Have a Account? <span onclick="handlePageChange('register')">Sign Up</span></div>
@@ -302,13 +302,13 @@
     </section>
     
     <section class="section" id="register">
-        <form class="mainForm">
+        <form onsubmit="handleRegister(event)" class="mainForm">
             <div class="mainLoginForm"><img src="./Assests/Images/logo.png" alt="Logo" class="logo"></div>
             <button class="loginWith"><span><i class="fa-brands fa-google"></i></span><span>Sign Up With Google</span></button>
             <button class="loginWith"><span><i class="fa-brands fa-facebook-f"></i></span><span>Sign Up With Facebook</span></button>
             <div class="orDiv">or</div>
-            <div class="formMainCol"><div class="formSubHdg">Email</div><input required type="email" placeholder="Email Address"></div>
-            <div class="formMainCol"><div class="formSubHdg">Password</div><input required type="password" placeholder="Password"></div>
+            <div class="formMainCol"><div class="formSubHdg">Email</div><input class="registerEmailInput" required type="email" placeholder="Email Address"></div>
+            <div class="formMainCol"><div class="formSubHdg">Password</div><input class="registerPassInput" required type="password" placeholder="Password"></div>
             <div class="loginBtn"><button>Register</button></div>
             <div class="tagLineEnd">Already Have a Account? <span onclick="handlePageChange('login')">Login</span></div>
         </form>

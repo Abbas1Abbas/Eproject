@@ -1778,6 +1778,10 @@ body {
         text-align: center;
     }
 
+    .footerList>*:not(:last-child)::before {
+        width: 100%;
+    }
+
     .footerPagesSection,
     .footerHelpSection {
         float: none;

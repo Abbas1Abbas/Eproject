@@ -881,8 +881,7 @@ body {
     height: 1px;
 }
 
-.footerHelpSection,
-.footerPagesSection {
+.footerHelpSection, .footerPagesSection {
     width: 20%;
 }
 
@@ -1542,7 +1541,11 @@ body {
     }
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1050px) {
+    .mainBgDiv>div {
+        grid-template-columns: 1fr;
+    }
+
     .footerAboutSection {
         width: 100%;
         margin: 20px 0px;
@@ -1560,12 +1563,6 @@ body {
 
     .footerSocialMediaSection {
         width: 33.33%;
-    }
-}
-
-@media only screen and (max-width: 1050px) {
-    .mainBgDiv>div {
-        grid-template-columns: 1fr;
     }
 
     .footerEnd {

@@ -22,6 +22,21 @@ const handleBarClick = () => {
     }
 }
 
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            const mapUrl = `https://www.google.com/maps?q=${lat},${lon}&z=15&output=embed`;
+
+            document.getElementById('locationFrame').src = mapUrl;
+        }, function (error) {
+            alert("Unable to fetch location.");
+            console.error(error);
+        });
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+
 const gallaryHandler = (className) => {
     let linksLis = document.querySelectorAll('.linkDivGallary li');
     let gallaryImages = document.querySelectorAll('.gallaryImage');

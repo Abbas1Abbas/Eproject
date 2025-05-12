@@ -1067,6 +1067,7 @@ body {
     width: 100%;
     text-align: left;
     font-weight: 400;
+    margin-bottom: 5px;
     color: #84795D !important;
     font-family: "Poppins", sans-serif;
 }
@@ -1427,6 +1428,10 @@ body {
     color: #84795D;
     text-align: center;
     width: 100%;
+}
+
+.requiredClass{
+    color: #E11919;
 }
 
 .formMainPara{

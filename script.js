@@ -175,9 +175,8 @@ const handleForgotPass = (e) => {
 };
 
 const handleAccount = (userDetail) => {
-    if(!userDetail) return;
 
-    console.log("Logged in as:", userDetail.email);
+    if(!userDetail) return;
     localStorage.setItem('currentLoginUser', JSON.stringify(userDetail));
 
     if (userDetail) {
@@ -187,7 +186,6 @@ const handleAccount = (userDetail) => {
         if (unauthDiv && authDiv) {
             unauthDiv.classList.remove('visibleDiv');
             unauthDiv.classList.add('hiddenDiv');
-
             authDiv.classList.remove('hiddenDiv');
             authDiv.classList.add('visibleDiv');
             document.querySelector('.accountLi').style.display = "none";
